@@ -17,7 +17,7 @@ function Dashboard(){
             };
             console.log(location);
             try{
-                const res=await fetch("http://localhost:8000/api/sendlocation",{
+                const res=await fetch("https://gps-tracking-backend-hkh1.onrender.com/api/sendlocation",{
                     method: "POST",
                     headers: {"Content-Type":"application/json"},
                     body: JSON.stringify({email,location})
